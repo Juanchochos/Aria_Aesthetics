@@ -182,3 +182,73 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+
+/* Media queries for da phone*/
+
+@media (max-width: 768 px) {
+    /*General adjustments*/
+    body{
+        font-size: 14px;
+    }
+
+    /*Upper header adjustments*/
+    .top-header .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .top-header .social-logo, 
+    .top-header .phone-info {
+        margin: 10px 0;
+    }
+
+    /*Main header adjustments*/
+    .main-header .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .main-header .company-logo {
+        margin: 10px auto;
+        width: 200px;
+    }
+
+    .main-header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /*full width image*/
+    .full-width-image img{
+        height: auto;
+    }
+
+    /*Section adjusments */
+    section h2 {
+        font-size: 30px;
+    }
+
+    section p {
+        margin: 10px 20px;
+        font-size: 16px;
+    }
+
+    .treatments-table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /*contact section*/
+    #contact p {
+        font-size: 16px;
+    }
+
+    /*Footer adjustments*/
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

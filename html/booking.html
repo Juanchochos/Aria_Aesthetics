@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to your main CSS -->
+</head>
+<body>
+    <!-- Header or Navigation -->
+    <header>
+        <a href="index.html">Back to Home</a>
+    </header>
+
+    <!-- Booking Form -->
+    <section id="booking-form">
+        <h2>Book an Appointment</h2>
+        
+        <!-- Form to book appointment -->
+        <form id="appointment-form" action="submit-booking.php" method="POST">
+            <label for="treatment">Select Treatment:</label>
+            <select name="treatment" id="treatment" required>
+                <option value="Facial Treatment">Facial Treatment</option>
+                <option value="Microdermabrasion">Microdermabrasion</option>
+                <option value="Microneedling">Microneedling</option>
+                <option value="Dermaplaning">Dermaplaning</option>
+                <!-- Add more treatment options here -->
+            </select>
+
+            <label for="appointment-date">Select Date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required>
+
+            <label for="appointment-time">Select Time:</label>
+            <select name="appointment-time" id="appointment-time" required>
+                <!-- Times will be dynamically populated using JavaScript -->
+            </select>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+
+    <script src="js/booking.js"></script> <!-- Link to JS that will handle dynamic time slots -->
+</body>
+</html>
