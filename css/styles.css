@@ -185,7 +185,7 @@ html {
 
 /* Media queries for da phone*/
 
-@media (max-width: 768 px) {
+@media (max-width: 768px) {
     /*General adjustments*/
     body{
         font-size: 14px;
