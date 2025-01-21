@@ -194,14 +194,27 @@ html {
 
     /*Upper header adjustments*/
     .top-header .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        display: flex;
+        justify-content: center;  /* This will center everything inside */
+        align-items: center;      /* This will vertically center the items */
+        gap: 10px;  
+        flex-wrap: nowrap;
     }
 
-    .top-header .social-logo, 
-    .top-header .phone-info {
-        margin: 10px 0;
+    .top-header .social-logo{
+        width: 20px;    }
+
+    .top-header .phone-info{
+        display: flex;
+        align-items: center;      /* Vertically align the phone icon and number */
+        justify-content: center;  /* Center the content horizontally */
+        white-space: nowrap;
+
+    }
+
+    .top-header .phone-icon{
+        width: 20px;
+        margin-right: 8px;
     }
 
     /*Main header adjustments*/
@@ -218,14 +231,23 @@ html {
     }
 
     .main-header nav ul {
+        display: flex; /* Ensure it's using flexbox */
         flex-direction: column;
         gap: 10px;
-        text-align: center;
-        justify-content: center;
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+        width: 100%; /* Ensure the nav takes up full width */
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-header nav ul li:last-child {
+        margin-bottom: 10px; /* Adjust the value as needed */
     }
 
     .main-header nav ul li {
-        text-align: center;
+        text-align: center; /* Center text within each list item */
+        width: 100%; /* Ensure each item takes full width */
     }
 
     /*full width image*/
