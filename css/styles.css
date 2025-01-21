@@ -189,6 +189,7 @@ html {
     /*General adjustments*/
     body{
         font-size: 14px;
+        overflow-x: hidden;
     }
 
     /*Upper header adjustments*/
@@ -219,6 +220,12 @@ html {
     .main-header nav ul {
         flex-direction: column;
         gap: 10px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .main-header nav ul li {
+        text-align: center;
     }
 
     /*full width image*/
@@ -236,10 +243,22 @@ html {
         font-size: 16px;
     }
 
+    .table-container {
+        width: 100%;
+        overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+    }
+
     .treatments-table {
         width: 100%;
+        max-width: 100%;
         font-size: 14px;
     }
+
+    .treatments-table td {
+        padding: 5px 10px;
+        font-size: 14px;
+        word-wrap: break-word;
+    }    
 
     /*contact section*/
     #contact p {
